@@ -1,0 +1,1 @@
+export const api_url = "https://discord.com/api/v9"

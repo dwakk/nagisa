@@ -1,0 +1,106 @@
+.guilds-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    margin-top: 57px;
+    margin-bottom: 60px;
+}
+
+.container {
+    margin: 40px auto 0px;
+    width: min(100%, 948px);
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+
+.guild-container {
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgb(31, 33, 41);
+    height: 152px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.img-background {
+    position: absolute;
+    inset: 0px;
+    z-index: 1;
+    transform: scale(1.4);
+    filter: blur(10px);
+    opacity: 0.3;
+}
+
+
+.img-icon {
+    position: relative;
+    z-index: 2;
+    border: 2px solid rgb(242, 244, 251);
+    filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 32px 72px);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    flex-shrink: 0;
+}
+
+
+.text-container {
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 16px;
+}
+
+
+.guild-name {
+    text-align: left !important;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(242, 244, 251);
+    margin: 0px 0px 3px;
+    padding: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -moz-box-orient: vertical;
+}
+
+.add-button {
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: bold;
+    line-height: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: #5865f27c;
+    border-width: 0;
+    border-radius: .5rem;
+    gap: .375rem;
+}
+
+.add-button:hover {
+    background-color:#656dc27c;
+}
